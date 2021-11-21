@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Modal, Alert } from 'antd';
 import { submitComment } from '../services';
 
-
 const CommentsForm = ({ slug }) => {
   const [error, setError] = useState(false);
   const [localStorage, setLocalStorage] = useState(null);
