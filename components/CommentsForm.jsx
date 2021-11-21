@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Modal,  Alert } from 'antd';
+import { Modal, Alert } from 'antd';
 import { submitComment } from '../services';
 import 'antd/dist/antd.css';
 
@@ -106,9 +106,9 @@ const CommentsForm = ({ slug }) => {
       {error && <p className="text-xs text-red-500">All fields are mandatory</p>}
       <div className="mt-8">
         <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Post Comment</button>
-        {showSuccessMessage && <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+        <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
           <Alert message="Comment submitted for review" type="success" showIcon />
-        </Modal>}
+        </Modal>
       </div>
     </div>
   );
