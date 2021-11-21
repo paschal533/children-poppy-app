@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Modal from 'react-bootstrap/Modal'
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 import { submitComment } from '../services';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -98,19 +99,19 @@ const CommentsForm = ({ slug }) => {
       <div className="mt-8">
         <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Post Comment</button>
         <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Successfully commented</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Comment submitted forn review by the admin</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            OK
-          </Button>
-        </Modal.Footer>
-      </Modal>
+          <Modal.Header closeButton>
+            <Modal.Title>Successfully commented</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Comment submitted forn review by the admin</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              OK
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     </div>
   );
