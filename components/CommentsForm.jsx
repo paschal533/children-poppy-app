@@ -82,7 +82,8 @@ const CommentsForm = ({ slug }) => {
           console.log('commended')
           setTimeout(() => {
             setShowSuccessMessage(false);
-          }, 3000);
+            setIsModalVisible(false);
+          }, 10000);
         }
       });
   };
