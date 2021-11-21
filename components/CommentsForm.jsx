@@ -6,7 +6,6 @@ import 'antd/dist/antd.css';
 const CommentsForm = ({ slug }) => {
   const [error, setError] = useState(false);
   const [localStorage, setLocalStorage] = useState(null);
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [formData, setFormData] = useState({ name: null, email: null, comment: null, storeData: false });
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -77,10 +76,8 @@ const CommentsForm = ({ slug }) => {
             ...prevState,
             ...formData,
           }));
-          setShowSuccessMessage(true);
           setIsModalVisible(true);
           setTimeout(() => {
-            setShowSuccessMessage(false);
             setIsModalVisible(false);
           }, 10000);
         }
