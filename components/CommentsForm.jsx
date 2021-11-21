@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, Alert } from 'antd';
 import { submitComment } from '../services';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 
 const CommentsForm = ({ slug }) => {
   const [error, setError] = useState(false);
