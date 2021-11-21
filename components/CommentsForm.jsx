@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { submitComment } from '../services';
+@import "~bootstrap/scss/bootstrap";
 
 const CommentsForm = ({ slug }) => {
   const [error, setError] = useState(false);
