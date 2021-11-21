@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Modal, Alert } from 'antd';
+import Modal from 'react-bootstrap/Modal'
 import { submitComment } from '../services';
-import 'antd/dist/antd.less';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CommentsForm = ({ slug }) => {
   const [error, setError] = useState(false);
   const [localStorage, setLocalStorage] = useState(null);
   const [formData, setFormData] = useState({ name: null, email: null, comment: null, storeData: false });
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     setLocalStorage(window.localStorage);
@@ -19,13 +19,7 @@ const CommentsForm = ({ slug }) => {
     setFormData(initalFormData);
   }, []);
 
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
+  const handleClose = () => setShow(false);
 
   const onInputChange = (e) => {
     const { target } = e;
@@ -44,7 +38,7 @@ const CommentsForm = ({ slug }) => {
 
   const handlePostSubmission = () => {
     setError(false);
-    setIsModalVisible(true);
+    setShow(true);
     const { name, email, comment, storeData } = formData;
     if (!name || !email || !comment) {
       setError(true);
@@ -78,7 +72,7 @@ const CommentsForm = ({ slug }) => {
             ...formData,
           }));
           setTimeout(() => {
-            setIsModalVisible(false);
+            setShow(false);
           }, 10000);
         }
       });
@@ -103,9 +97,20 @@ const CommentsForm = ({ slug }) => {
       {error && <p className="text-xs text-red-500">All fields are mandatory</p>}
       <div className="mt-8">
         <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Post Comment</button>
-        <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-          <Alert message="Comment submitted for review by the admin" type="success" showIcon />
-        </Modal>
+        <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Successfully commented</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Comment submitted forn review by the admin</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            OK
+          </Button>
+        </Modal.Footer>
+      </Modal>
       </div>
     </div>
   );
