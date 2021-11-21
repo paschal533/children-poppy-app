@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { submitComment } from '../services';
 import { Modal,  Alert } from 'antd';
+import { submitComment } from '../services';
 import 'antd/dist/antd.css';
 
 const CommentsForm = ({ slug }) => {
@@ -79,7 +79,6 @@ const CommentsForm = ({ slug }) => {
           }));
           setShowSuccessMessage(true);
           setIsModalVisible(true);
-          console.log('commended')
           setTimeout(() => {
             setShowSuccessMessage(false);
             setIsModalVisible(false);
@@ -108,8 +107,7 @@ const CommentsForm = ({ slug }) => {
       <div className="mt-8">
         <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Post Comment</button>
         {showSuccessMessage && <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-              <Alert message="Success" type="success" showIcon />
-             <span className="text-xl font-semibold mt-3 text-green-500">Comment submitted for review</span>
+              <Alert message="Comment submitted for review" type="success" showIcon />
           </Modal>}
       </div>
     </div>
