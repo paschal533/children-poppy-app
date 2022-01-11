@@ -11,6 +11,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1" /> */}
+          <meta name="description" content="Everything you need to know about childrens nature and nurture" />
         </Head>
         <body>
           <Main />
