@@ -12,6 +12,8 @@ class MyDocument extends Document {
         <Head>
           {/* <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1" /> */}
           <meta name="description" content="Everything you need to know about childrens nature and nurture" />
+          <meta name="keywords" content="children, development, growth, nurture, education, parent, teacher, care-giver, early childhood, play," />
+          <meta name="author" content="Kosi Okwuosah" />
         </Head>
         <body>
           <Main />
