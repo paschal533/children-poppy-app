@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { FeaturedPosts } from '../sections/index';
 import { PostCard, Categories, PostWidget, Loader } from '../components';
-import { getFeaturedPosts } from '../services';
+import { getDisplayPosts } from '../services';
 
 export default function Home() {
   const [postsResult, setPostsResult] = useState([]);
 
   useEffect(() => {
-    getFeaturedPosts().then((result) => {
+    getDisplayPosts().then((result) => {
       setPostsResult(result);
     });
   }, []);
