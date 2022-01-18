@@ -14,6 +14,7 @@ class MyDocument extends Document {
           <meta name="description" content="Everything you need to know about childrens nature and nurture" />
           <meta name="keywords" content="children, development, growth, nurture, education, parent, teacher, care-giver, early childhood, play," />
           <meta name="author" content="Kosi Okwuosah" />
+          <meta name="propeller" content="32ee0889395e657be2e78ce0e8f15d12" />
         </Head>
         <body>
           <Main />
