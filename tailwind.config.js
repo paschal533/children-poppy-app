@@ -6,6 +6,9 @@ module.exports = {
       spacing: {
         '2/3': '66.666667%',
       },
+      zIndex: {
+        '100': '100',
+      },
     },
   },
   variants: {
