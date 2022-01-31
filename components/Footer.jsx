@@ -1,24 +1,31 @@
 import Link from 'next/link';
-import { BsTwitter, BsInstagram } from 'react-icons/bs';
+import { BsTwitter, BsLinkedin } from 'react-icons/bs';
+import { AiOutlineMail } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 
 const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
+    <p className="text-white text-bold text-center">Follow Us</p>
     <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
       <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-        <div className="absolute h-6 w-6 text-white arrow-btn bottom-5 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
-          <Link href="/">
+        <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full">
+          <Link href="https://twitter.com/Kosi_Okwuosah">
             <BsTwitter />
           </Link>
         </div>
-        <div className="absolute h-6 w-6 text-white arrow-btn bottom-5 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
-          <Link href="/">
+        <div className=" h-8 p-2 w-8 text-white text-centercursor-pointer bg-pink-600 rounded-full">
+          <Link href="https://www.facebook.com/reine.victoria.714">
             <FaFacebookF />
           </Link>
         </div>
-        <div className="absolute h-6 w-6 text-white arrow-btn bottom-5 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
-          <Link href="/">
-            <BsInstagram />
+        <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full">
+          <Link href="https://www.linkedin.com/in/victoria-okwuosah-1736b0206">
+            <BsLinkedin />
+          </Link>
+        </div>
+         <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full">
+          <Link href="/childrenspoppy@gmail.com">
+            <AiOutlineMail />
           </Link>
         </div>
       </div>
