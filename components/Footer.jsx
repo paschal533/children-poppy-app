@@ -4,26 +4,26 @@ import { FaFacebookF } from 'react-icons/fa';
 
 const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
-    <p className="text-white text-bold text-center">Follow Us</p>
+    <p className="text-white text-bold text-center border-b">Follow Us</p>
     <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
       <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-        <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full">
+        <div className="h-10 p-3 w-10 text-white text-center cursor-pointer bg-pink-600 rounded-full">
           <a target="_blank" href="https://twitter.com/Kosi_Okwuosah" rel="noopener noreferrer">
             <BsTwitter />
           </a>
         </div>
-        <div className=" h-8 p-2 w-8 text-white text-centercursor-pointer bg-pink-600 rounded-full">
+        <div className="h-10 p-3 w-10 text-white text-centercursor-pointer bg-pink-600 rounded-full">
           <a  target="_blank" href="https://www.facebook.com/reine.victoria.714" rel="noopener noreferrer">
             <FaFacebookF />
           </a>
         </div>
-        <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full">
+        <div className="h-10 p-3 w-10 text-white text-center cursor-pointer bg-pink-600 rounded-full">
           <a target="_blank" href="https://www.linkedin.com/in/victoria-okwuosah-1736b0206" rel="noopener noreferrer">
             <BsLinkedin />
           </a>
         </div>
-         <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full" rel="noopener noreferrer">
-          <a target="_blank" href="/childrenspoppy@gmail.com">
+         <div className="h-10 p-3 w-10 text-white text-center cursor-pointer bg-pink-600 rounded-full" rel="noopener noreferrer">
+          <a target="_blank" href="mailto:childrenspoppy@gmail.com">
             <AiOutlineMail />
           </a>
         </div>
@@ -35,10 +35,11 @@ const Footer = () => (
       <p className="text-white text-sm text-center font-medium mt-2">childrenspoppy@gmail.com</p>
     </div>
 
-    <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5 " />
+    <div className="sm:w-[90%] w-full h-[0.25px] bg-white-400 mt-5 " />
 
-    <div className="sm:w-[90%] w-70% w-full flex justify-between items-center mt-3">
+    <div className="sm:w-[90%] w-4/5 flex justify-between items-center mt-3">
       <p className="text-white text-left text-xs">@Chilren's poppy 2022</p>
+
       <p className="text-white text-right text-xs">All rights reserved</p>
     </div>
   </div>

@@ -4,4 +4,7 @@ module.exports = {
     loader: 'imgix',
     path: '',
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };

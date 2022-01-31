@@ -38,7 +38,7 @@ const Nav = () => {
             </div>
             <div className={openCat ? 'block' : 'hidden'}>
               {categories.map((category, index) => (
-                <div onClick={() => setOpen(!open)}><Link key={index} href={`/category/${category.slug}`}><span className="flex transition-all-duration-500 ease-in mt-2 align-middle ml-4 font-normal cursor-pointer">{category.name}</span></Link></div>
+                <div onClick={() => setOpen(!open)}><Link key={index} href={`/category/${category.slug}`}><span className="flex border-b transition-all-duration-500 ease-in mt-2 align-middle ml-4 font-normal cursor-pointer">{category.name}</span></Link></div>
               ))}
             </div>
           </li>
