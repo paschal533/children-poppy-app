@@ -17,6 +17,9 @@ function MyDocument() {
       <Head>
         <meta name="propeller" content="32ee0889395e657be2e78ce0e8f15d12" />
       </Head>
+      <Head>
+        <script dangerouslySetInnerHTML={{__html: `(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',4817751,document.body||document.documentElement)`}} />
+      </Head>
       <body>
         <Main />
         <NextScript />

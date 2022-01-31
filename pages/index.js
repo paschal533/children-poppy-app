@@ -23,11 +23,11 @@ export default function Home() {
               <PostCard key={index} post={post} />
             </div>
           )) : <Loader />}
-        </div>
-        <div className="text-center">
-          <Link href="/articles">
-            <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">View more articles</span>
-          </Link>
+          {postsResult?.length !== 0 && <div className="text-center">
+            <Link href="/articles">
+              <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">View more articles</span>
+            </Link>
+          </div>}
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
