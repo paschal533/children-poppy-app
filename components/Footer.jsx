@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { BsTwitter, BsLinkedin } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
@@ -9,24 +8,24 @@ const Footer = () => (
     <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
       <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
         <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full">
-          <Link href="https://twitter.com/Kosi_Okwuosah">
+          <a target="_blank" href="https://twitter.com/Kosi_Okwuosah" rel="noopener noreferrer">
             <BsTwitter />
-          </Link>
+          </a>
         </div>
         <div className=" h-8 p-2 w-8 text-white text-centercursor-pointer bg-pink-600 rounded-full">
-          <Link href="https://www.facebook.com/reine.victoria.714">
+          <a  target="_blank" href="https://www.facebook.com/reine.victoria.714" rel="noopener noreferrer">
             <FaFacebookF />
-          </Link>
+          </a>
         </div>
         <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full">
-          <Link href="https://www.linkedin.com/in/victoria-okwuosah-1736b0206">
+          <a target="_blank" href="https://www.linkedin.com/in/victoria-okwuosah-1736b0206" rel="noopener noreferrer">
             <BsLinkedin />
-          </Link>
+          </a>
         </div>
-         <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full">
-          <Link href="/childrenspoppy@gmail.com">
+         <div className="h-8 p-2 w-8 text-white text-center cursor-pointer bg-pink-600 rounded-full" rel="noopener noreferrer">
+          <a target="_blank" href="/childrenspoppy@gmail.com">
             <AiOutlineMail />
-          </Link>
+          </a>
         </div>
       </div>
     </div>
