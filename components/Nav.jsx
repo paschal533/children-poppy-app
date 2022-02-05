@@ -31,7 +31,7 @@ const Nav = () => {
           md:pl-0 pl-9 transition-all-duration-500 ease-in ${open ? 'top-15 opacity-100' : 'top-[-490px] hidden md:opacity-100 opacity-0'}`}
         >
           <li className="md:ml-8 text-xl md:my-0 my-7">
-            <div onClick={() => setOpen(!open)}><Link href="/" className="text-gray-800 hover:text-gray-400 duration-500">HOME</Link></div>
+            //<div onClick={() => setOpen(!open)}><Link href="/" className="text-gray-800 hover:text-gray-400 duration-500">HOME</Link></div>
           </li>
           <li className={dropdown}>
             <div onClick={() => setOpenCat(!openCat)} className="flex">
