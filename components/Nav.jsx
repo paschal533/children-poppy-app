@@ -20,7 +20,7 @@ const Nav = () => {
       <div className="md:flex nav items-center justify-between bg-white py-4 md:px-10 px-7">
         <Link href="/">
           <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
-            <span className="logo" /> 
+            <span className="logo" ><Image src="https://i.ibb.co/TvBCbb2/image-removebg-preview.png" width="30px" height="30px" /></span> 
             Children&apos;s Poppy
           </div>
         </Link>
@@ -40,7 +40,7 @@ const Nav = () => {
             </div>
             <div className={openCat ? 'block md:mt-[20px] mt-0' : 'hidden'}>
               {categories.map((category, index) => (
-                <div onClick={() => setOpen(!open)}><Link key={index} href={`/category/${category.slug}`}><span className="flex border-b transition-all-duration-500 ease-in md:mt-4 mt-2 align-middle ml-4 font-normal cursor-pointer">{category.name}</span></Link></div>
+                <div onClick={() => setOpen(!open)}><Link key={index} href={`/category/${category.slug}`}><span className="flex border-b transition-all-duration-500 ease-in md:mt-4 mt-2 align-middle ml-2 font-normal cursor-pointer">{category.name}</span></Link></div>
               ))}
             </div>
           </li>

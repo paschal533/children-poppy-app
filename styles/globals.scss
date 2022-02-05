@@ -50,6 +50,11 @@ body {
 .bar{
   top: 17px;
 }
+@media screen and (min-width: 540px) {
+   .nav{
+     height: 85px;
+   }
+}
 
 .list{
   width: 600px;
