@@ -43,16 +43,35 @@ body {
   }
 }
 
+.nav{
+  height: 70px;
+}
+
 .bar{
   top: 17px;
+}
+
+.list{
+  width: 600px;
+  justify-content: space-between;
 }
 
 .name{
   margin-top: 100px;
 }
+@media screen and (max-width: 540px) {
+   .nav-dropdown{
+     height: auto !important;
+     margin-top: 0px !important;
+   }
+}
+.nav-dropdown{
+  height: 300px;
+  margin-top: 300px;
+}
 
 .ic{
-  margin-left: 40px;
+  margin-left: 100px;
 }
 
 .react-multi-carousel-list {
