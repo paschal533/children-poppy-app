@@ -17,14 +17,14 @@ const Nav = () => {
   const dropdown = `${openCat? 'nav-dropdown' : ''} md:ml-8 text-xl ${openCat? "mb-7" : "my-7"}`;
   return (
     <div className="shadow-md w-full fixed z-100 top-0 left-0">
-      <div className="md:flex nav items-center justify-between bg-white py-4 md:px-10 px-7">
+      <div className="md:flex nav items-center justify-between bg-white py-4 md:px-10 px-2">
         <Link href="/">
           <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
             <span className="logo" ><Image src="https://i.ibb.co/TvBCbb2/image-removebg-preview.png" width="30px" height="30px" /></span> 
             Children&apos;s Poppy
           </div>
         </Link>
-        <div className="text-3x1 absolute bar right-8 center cursor-pointer md:hidden">
+        <div className="text-3x1 absolute bar right-4 center cursor-pointer md:hidden">
           <ion-icon size="large" onClick={() => setOpen(!open)} name={open ? 'close' : 'menu'} />
         </div>
         <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white left-0 list
