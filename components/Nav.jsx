@@ -36,7 +36,7 @@ const Nav = () => {
           <li className={dropdown}>
             <div onClick={() => setOpenCat(!openCat)} className="flex">
               <div className=" flex-col text-gray-800 cursor-pointer hover:text-gray-400 duration-500">CATEGORIES</div>
-              <ion-icon name={openCat ? 'chevron-up-outline' : 'chevron-down-outline'} style={{ marginLeft: "100px" }} className="ic flex-col" />
+              <ion-icon name={openCat ? 'chevron-up-outline' : 'chevron-down-outline'} style={{ marginLeft: "50px" }} className="ic flex-col" />
             </div>
             <div className={openCat ? 'block md:mt-[20px] mt-0' : 'hidden'}>
               {categories.map((category, index) => (
