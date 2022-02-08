@@ -4,7 +4,7 @@ import { FaFacebookF } from 'react-icons/fa';
 
 const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
-    <p className="text-white text-bold text-center border-b">Follow Us</p>
+    <p className="text-white text-bold text-center border-b">Contact Us</p>
     <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
       <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
         <div className="h-10 p-3 w-10 text-white text-center cursor-pointer bg-pink-600 rounded-full">
