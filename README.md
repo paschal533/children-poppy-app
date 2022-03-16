@@ -6,5 +6,3 @@
  #� �c�h�i�l�d�r�e�n�-�p�o�p�p�y�-�a�p�p�
 �
 �#� �c�h�i�l�d�r�e�n�-�p�o�p�p�y�-�a�p�p�
-�
-�
