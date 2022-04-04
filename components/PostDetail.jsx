@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import moment from 'moment';
 
@@ -6,12 +6,6 @@ const PostDetail = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
     let { children } = obj;
-
-    useEffect(() => {
-      console.log(obj);
-      console.log(modifiedText);
-      console.log(children);
-    }, []);
  
     if (obj) {
       if (obj.bold) {
