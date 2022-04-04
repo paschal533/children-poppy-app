@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import moment from 'moment';
 
 const PostDetail = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
-    console.log(obj);
+    let { children } = obj;
 
+    useEffect(() => {
+      console.log(obj);
+      console.log(modifiedText);
+      console.log(children);
+    }, []);
+ 
     if (obj) {
       if (obj.bold) {
         modifiedText = (<b key={index}>{text}</b>);
@@ -19,9 +25,6 @@ const PostDetail = ({ post }) => {
       if (obj.underline) {
         modifiedText = (<u key={index}>{text}</u>);
       }
-      if (obj.list) {
-        modifiedText = (<li key={index}>{text}</li>);
-      }
     }
 
     switch (type) {
@@ -31,6 +34,8 @@ const PostDetail = ({ post }) => {
         return <p key={index} className="mb-8">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
       case 'heading-four':
         return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
+      case 'list-item':
+        return <ul key={index} className="text-md font-semibold mb-4">{children.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</ul>;
       case 'image':
         return (
           <img
