@@ -6,7 +6,7 @@ const PostDetail = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
     let { children } = obj;
- 
+
     if (obj) {
       if (obj.bold) {
         modifiedText = (<b key={index}>{text}</b>);
@@ -18,6 +18,9 @@ const PostDetail = ({ post }) => {
 
       if (obj.underline) {
         modifiedText = (<u key={index}>{text}</u>);
+      }
+      if(obj.href) {
+        modifiedText = (<a className="link" href={obj.href}>Click here to learn more...</a>)
       }
     }
 

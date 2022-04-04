@@ -18,7 +18,7 @@ export default function Home() {
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
-          {postsResult?.length !== 0 ? postsResult?.reverse().slice(0, 3).map((post, index) => (
+          {postsResult?.length !== 0 ? postsResult?.reverse().slice(0, 5).map((post, index) => (
             <div>
               <PostCard key={index} post={post} />
             </div>
