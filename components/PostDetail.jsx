@@ -5,6 +5,7 @@ import moment from 'moment';
 const PostDetail = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
+    console.log(obj);
 
     if (obj) {
       if (obj.bold) {
@@ -17,6 +18,9 @@ const PostDetail = ({ post }) => {
 
       if (obj.underline) {
         modifiedText = (<u key={index}>{text}</u>);
+      }
+      if (obj.list) {
+        modifiedText = (<li key={index}>{text}</li>);
       }
     }
 
