@@ -14,7 +14,7 @@ const Nav = () => {
 
   const [open, setOpen] = useState(false);
   const [openCat, setOpenCat] = useState(false);
-  const dropdown = `${openCat? 'nav-dropdown' : ''} md:ml-8 text-xl ${openCat? "mb-7" : "my-7"}`;
+  const dropdown = `${openCat? 'nav-dropdown mt-[350px] h-full' : ''} md:ml-8 text-xl ${openCat? "mb-7" : "my-7"}`;
   return (
     <div className="shadow-md w-full fixed z-100 top-0 left-0">
       <div className="md:flex nav items-center justify-between bg-white py-4 md:px-10 px-2">
