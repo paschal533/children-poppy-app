@@ -15,7 +15,7 @@ export default function Articles() {
     <div className="container mx-auto px-2 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
-          {postsResult?.length !== 0 ? postsResult?.reverse().slice(5).map((post, index) => (
+          {postsResult?.length !== 0 ? postsResult?.reverse().slice(10).map((post, index) => (
             <PostCard key={index} post={post} />
           )) : <Loader />}
         </div>
