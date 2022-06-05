@@ -1,5 +1,6 @@
 import React from 'react';
 import Script from 'next/script';
+import { NextSeo } from "next-seo";
 import '../styles/globals.scss';
 import { Layout } from '../components';
 
