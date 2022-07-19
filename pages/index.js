@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { FeaturedPosts } from '../sections/index';
 import { PostCard, Categories, PostWidget, Loader } from '../components';
 import { getDisplayPosts } from '../services';
+import NewsLetter from '../components/NewsLetter';
 
 export default function Home() {
   const [postsResult, setPostsResult] = useState([]);
@@ -28,6 +29,7 @@ export default function Home() {
               <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">View more articles</span>
             </Link>
           </div>}
+          <NewsLetter />
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">

@@ -55,7 +55,8 @@ const CommentsForm = ({ slug }) => {
       localStorage.removeItem('email');
     }
 
-    submitComment(commentObj)
+    try {
+      submitComment(commentObj)
       .then((res) => {
         if (res.createComment) {
           if (!storeData) {
@@ -72,6 +73,10 @@ const CommentsForm = ({ slug }) => {
           }, 3000);
         }
       });
+    }catch(error){
+      console.log(error)
+    }
+     
   };
 
   return (

@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components';
 import { getPosts, getPostDetails } from '../../services';
 import { AdjacentPosts } from '../../sections';
+import NewsLetter from '../../components/NewsLetter';
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
@@ -22,6 +23,7 @@ const PostDetails = ({ post }) => {
             <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
             <CommentsForm slug={post.slug} />
             <Comments slug={post.slug} />
+            <NewsLetter />
           </div>
           <div className="col-span-1 lg:col-span-4">
             <div className="relative lg:sticky top-8">
