@@ -16,13 +16,13 @@ function About() {
                 height="200px"
                 width="200px"
                 className="align-middle rounded-full"
-                src="/kosi.jpg"
+                src="/koi.jpg"
               />
             </div>
             <h3 className="name text-white mt-20 mb-4 text-xl font-bold">Miss Okwuosah Victoria</h3>
-            <p className="text-white text-ls">Miss Kosi Okwusah is an undergraduate student of Early Childhood
-              Education in the University of Benin, Nigeria. she is very passionate about children and has had a worthwhile
-              experience in teaching. she will be sharing the knowledge and skills she has acquired overtime as she
+            <p className="text-white text-ls">Miss Kosi Okwusah is graduate of Early Childhood
+              Education from the University of Benin, Nigeria. she is very passionate about children and has had a worthwhile
+              experience in teaching. she shares the knowledge and skills she has acquired overtime as she
               embarks on an unending journey to acquire more.
             </p>
           </div>

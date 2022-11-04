@@ -31,16 +31,16 @@ const Footer = () => (
     </div>
 
     <div className="flex justify-center items-center flex-col mt-5">
-      <p className="text-white text-sm text-center">Come join us and learn more about children</p>
-      <p className="text-white text-sm text-center font-medium mt-2">childrenspoppy@gmail.com</p>
+      <p className="text-white md:text-xl text-lg text-center">Come join us and learn more about children</p>
+      <p className="text-white md:text-xl text-lg sstext-center font-medium mt-2">childrenspoppy@gmail.com</p>
     </div>
 
     <div className="sm:w-[90%] w-full h-[0.25px] bg-white-400 mt-5 " />
 
     <div className="sm:w-[90%] w-4/5 flex justify-between items-center mt-3">
-      <p className="text-white text-left text-xs">@Chilren's poppy 2022</p>
+      <p className="text-white text-left md:text-xl text-lg">@Chilren's poppy 2022</p>
 
-      <p className="text-white text-right text-xs">All rights reserved</p>
+      <p className="text-white text-right md:text-xl text-lg">All rights reserved</p>
     </div>
   </div>
 );

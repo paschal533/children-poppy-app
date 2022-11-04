@@ -38,7 +38,7 @@ const Nav = () => {
               <div className=" flex-col text-gray-800 cursor-pointer hover:text-gray-400 duration-500">CATEGORIES</div>
               <ion-icon name={openCat ? 'chevron-up-outline' : 'chevron-down-outline'} style={{ marginLeft: "50px" }} className="ic flex-col" />
             </div>
-            <div className={openCat ? 'block md:mt-[20px] mt-0' : 'hidden'}>
+            <div className={openCat ? 'block h-full md:mt-[20px] mt-0' : 'hidden'}>
               {categories.map((category, index) => (
                 <div onClick={() => setOpen(!open)}><Link key={index} href={`/category/${category.slug}`}><span className="flex border-b transition-all-duration-500 ease-in md:mt-4 mt-2 align-middle ml-2 font-normal cursor-pointer">{category.name}</span></Link></div>
               ))}
