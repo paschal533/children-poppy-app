@@ -26,13 +26,13 @@ const PostDetail = ({ post }) => {
 
     switch (type) {
       case 'heading-three':
-        return <h3 key={index} className="text-xl font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
+        return <h3 key={index} className="align-left text-left text-xl font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
       case 'paragraph':
-        return <p key={index} className="mb-8 md:text-xl text-lg">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
+        return <p key={index} className="align-left text-left mb-8 md:text-xl text-lg">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
       case 'heading-four':
-        return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
+        return <h4 key={index} className="align-left text-left text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
       case 'list-item':
-        return <ul key={index} className="text-md font-semibold mb-4">{children.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</ul>;
+        return <ul key={index} className="align-left text-left text-md font-semibold mb-4">{children.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</ul>;
       case 'image':
         return (
           <img
@@ -54,7 +54,7 @@ const PostDetail = ({ post }) => {
         <div className="relative overflow-hidden shadow-md mb-6">
           <img src={post.featuredImage.url} alt="" className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
         </div>
-        <div className="px-2 lg:px-0">
+        <div className="px-2 align-left text-left lg:px-0">
           <div className="flex mb-8 w-full">
             <div className="hidden md:flex lg:mb-0 lg:w-auto mr-8">
               <img
@@ -73,7 +73,7 @@ const PostDetail = ({ post }) => {
               <span className="align-middle">{moment(post.createdAt).format('MMM DD, YYYY')}</span>
             </div>
           </div>
-          <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
+          <h1 className="mb-8 align-left text-left text-3xl font-semibold">{post.title}</h1>
           {post.content.raw.children.map((typeObj, index) => {
             const children = typeObj.children.map((item, itemindex) => getContentFragment(itemindex, item.text, item));
 
